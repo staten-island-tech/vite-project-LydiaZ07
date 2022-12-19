@@ -12,7 +12,8 @@ h1 {
 }
 
 .object {
-  color: red;
+  background-color: aqua;
+  margin: 100px;
 }
 
 /* :root {
