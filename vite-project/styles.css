@@ -1,19 +1,22 @@
 body,
 html,
 * {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: red;
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: red;
 }
 
 h1 {
-  font-size: 3.2rem;
-  line-height: 8rem;
+    font-size: 3.2rem;
+    line-height: 8rem;
 }
 
+.fruit {
+    max-width: 10rem;
+}
 
 /* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
