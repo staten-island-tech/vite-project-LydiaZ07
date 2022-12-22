@@ -5,3 +5,4 @@ const DOMSelectors = {
     object: document.querySelectorAll("object")
 };
 
+
