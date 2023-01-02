@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,45 +7,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Document</title>
-
+  <link rel="stylesheet" href="styles.css">
 </head>
-<link rel="stylesheet" href="styles.css">
 
-<body>
-  <h1>Pick a fruit!</h1>
-  <div id="buttons">
+<body class="light">
 
-    <button class="btn">All</button>
-    <button class="btn">Red</button>
-    <button class="btn">Orange</button>
-    <button class="btn">Yellow</button>
-    <button class="btn">Green</button>
-    <button class="btn">Blue</button>
-    <button class="btn">Purple</button>
+  <div class="container">
 
+    <div class="top"></div>
 
+    <h1 class="main">Purchase a Fruit!</h1>
+
+    <!-- change themeBtn into toggle later -->
+    <div id="themeBtn">
+
+      <button type="submit" id="toggleTheme">Click Me(:</button>
+
+    </div><br>
+    <div class="type" id="typeBtn">
+      <p class="btnLabel">Filter By Colors:</p>
+      <button type="submit" class="typeSelectors" id="allFruits">All</button>
+
+      <button type="submit" class="typeSelectors" id="red">Red</button>
+
+      <button type="submit" class="typeSelectors" id="orange">Orange</button>
+
+      <button type="submit" class="typeSelectors" id="yellow">Yellow</button>
+
+      <button type="submit" class="typeSelectors" id="green">Green</button>
+
+      <button type="submit" class="typeSelectors" id="blue">Blue</button>
+
+      <button type="submit" class="typeSelectors" id="purple">Purple</button>
+    </div></br>
+    <div class="popularity" id="popularBtn">
+      <p class="btnLabel">Filter by Popularity:</p>
+      <button type="submit" class="popularSelectors" id="popularLeastMost">Least to Most</button>
+      <button type="submit" class="popularSelectors" id="popularMostLeast">Most to Least</button>
+    </div><br>
   </div>
-
-  <ul>
-    <li>
-      p
-    </li>
-  </ul>
-
-  <div id="objects">
-
-    <div class="object">Apple <img class="fruit" src="Apple.jpg" alt="apples"></div>
-    <div class="object">Banana <img class="fruit" src="Banana.jpg" alt="banana"></div>
-    <div class="object">Orange <img class="fruit" src="Orange.jpg" alt="oranges"></div>
-    <div class="object">Honeydew <img class="fruit" src="Honeydew.jpg" alt="Honeydew"></div>
-    <div class="object">Blueberries <img class="fruit" src="Blueberry.jpg" alt="blueberries"></div>
-    <div class="object">Grapes <img class="fruit" src="Grape.jpg" alt="grapes"></div>
-
-  </div>
-
-
-  <script src="./main.js"></script>
+  <div id="products"></div>
 </body>
-
 
 </html>
