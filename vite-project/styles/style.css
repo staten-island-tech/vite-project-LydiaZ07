@@ -1,0 +1,41 @@
+@import url(variables.css);
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --black: #0000;
+  --light-blue: #c7d9ff;
+  --light-purple: #948df5;
+  --dark-purple: #25086e;
+  --dark-blue: #09025f;
+  --gray: #252c30;
+
+  /*Intentions*/
+  --primary: var(--light-purple);
+  --secondary: var(--light-blue);
+
+  /*Typograpy*/
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+}
+
+.light {
+  --primary: var(--light-blue);
+  --secondary: var(--light-purple);
+  color: rgb(17, 8, 94);
+}
+
+.img {
+  width: 100%;
+  display: block;
+}
