@@ -12,5 +12,5 @@ const DOMSelectors = {
     popularMostLeast: document.getElementById("popularMostLeast")
 };
 
-export { DOMSelectors};
+export {DOMSelectors};
 

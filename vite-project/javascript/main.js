@@ -1,4 +1,4 @@
-import "/styles/style.css";
+import "../styles/styles.css";
 import {fruitsInfo} from "./fruits.js";
 import { DOMSelectors} from "./DOM.js";
 console.log(fruitsInfo);
@@ -17,7 +17,7 @@ const createProduct = function (fruitsInfo) {
     DOMSelectors.products.insertAdjacentHTML(
         "beforeend",
         `<div id="productCard">
-        <p><img src=${fruitsInfo.imgURL}></p>
+        <p><img src=${fruitsInfo.img}></p>
         <h2>${fruitsInfo.name}</h2>
         <button id="shopBtn">Shop Now</button>
         </div>`
@@ -37,7 +37,7 @@ const mapData = function (){
     .map((fruit) => ({
         name: fruit.name,
         type: fruit.type,
-        imgURL: fruit.imgURL,
+        img: fruit.img,
         popular: fruit.popular,
         description: fruit.description
     }))
