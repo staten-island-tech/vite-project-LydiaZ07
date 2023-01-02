@@ -6,7 +6,10 @@ body,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+
 }
 
 :root {
@@ -36,6 +39,21 @@ body,
 }
 
 .img {
-  width: 100%;
+  max-width: 6rem;
   display: block;
+  display: flex;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#output {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 98.5vw;
+  justify-content: space-around;
+  align-content: space-around;
 }
