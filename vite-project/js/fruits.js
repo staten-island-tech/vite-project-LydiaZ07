@@ -14,7 +14,7 @@ const fruitsInfo = [
         Bulk: "no"
     },
     {
-        name: "Banana",
+        name: "Bananas",
         type: "yellow",
         price: 2.25,
         image: "https://images.unsplash.com/photo-1603833665858-e61d17a86224?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",

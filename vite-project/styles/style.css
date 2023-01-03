@@ -13,16 +13,19 @@ body,
 }
 
 :root {
-  --black: #0000;
-  --light-blue: #c7d9ff;
-  --light-purple: #948df5;
-  --dark-purple: #25086e;
-  --dark-blue: #09025f;
+  --black: #000;
   --gray: #252c30;
+  --dark-blue: #135cc5;
+  --royal-blue: #4169E1;
+  --pastel-blue: #A7C7E7;
+  --light-blue: #ADD8E6;
+  --light-red: #f87171;
+  --dark-red: #dc2626;
+  --light-orange: #FFD580;
 
   /*Intentions*/
-  --primary: var(--light-purple);
-  --secondary: var(--light-blue);
+  --primary: var(--light-blue);
+  --secondary: var(--light-orange);
 
   /*Typograpy*/
   --h1: 7.594rem;
@@ -33,9 +36,22 @@ body,
 }
 
 .light {
-  --primary: var(--light-blue);
-  --secondary: var(--light-purple);
+  --primary: var(--pastel-blue);
+  --secondary: var(--light-blue);
   color: rgb(17, 8, 94);
+}
+
+.dark {
+  --primary: var(--royal-blue);
+  --secondary: var(--dark-blue);
+}
+
+.main {
+  background-color: var(--secondary);
+}
+
+.container {
+  background-color: var(--primary);
 }
 
 .img {
@@ -45,8 +61,33 @@ body,
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: var(--h1);
 }
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
 
 #output {
   display: flex;
