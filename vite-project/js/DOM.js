@@ -136,9 +136,44 @@ function initial() {
     });
   }
 
+  function bulk(){
+    fruitsInfo
+    .filter((bulk) => bulk.Bulk.includes("yes"))
+    .forEach((bulk) => {
+        DOMSelectors.output.insertAdjacentHTML(
+            "beforeend", `<div class="menu-card" id="${bulk.name}">
+            <h5 class="menu-item">${bulk.name}</h5>
+            <img class="img" src=${bulk.image} alt="" class="menu-img">
+            <h5 class="item-price">$${bulk.price}</h5>
+            <button class="btn" id="addtocart">Add To Cart</button>
+            </div>`
+          );
+        });
+    }
+
+    function notBulk(){
+        fruitsInfo
+        .filter((notBulk) => notBulk.Bulk.includes("no"))
+        .forEach((notBulk) => {
+            DOMSelectors.output.insertAdjacentHTML(
+            "beforeend", `<div class="menu-card" id="${notBulk.name}">
+            <h5 class="menu-item">${notBulk.name}</h5>
+            <img class="img" src=${notBulk.image} alt="" class="menu-img">
+            <h5 class="item-price">$${notBulk.price}</h5>
+            <button class="btn" id="addtocart">Add To Cart</button>
+            </div>`
+
+            )
+        });
+    };
+
   function clear(){
     DOMSelectors.output.innerHTML = "";
   }
+
+
+
+
 
   initial();
 
@@ -175,6 +210,16 @@ function initial() {
   document.getElementById("purple").addEventListener("click", function (){
     clear();
     purple();
+  });
+
+  document.getElementById("bulk").addEventListener("click", function(){
+    clear();
+    bulk();
+  });
+
+  document.getElementById("notBulk").addEventListener("click", function(){
+    clear();
+    notBulk();
   });
  
 
